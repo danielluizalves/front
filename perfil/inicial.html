@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SND Music Share | Home</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/fontawesome.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
+    <link href="https://fonts.googleapis.com/css?family=Bitter:400,700&display=swap&subset=latin-ext" rel="stylesheet" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="Wrapper" ng-app="myApp">
+        <div class="Sidebar" ng-class="boolie ? 'is-collapsed' : ''">
+            <header class="Sidebar-header">
+                <img src="foto.png" alt="Logo" class="Sidebar-logo" />
+            </header>
+            <div class="text-center uppercase name">
+                <p href="#" class="fs-16px">Vermont</a>
+            </div>
+            <div class="text-center name">
+                <p href="#" class="fs-14px mb-45">Psytrance - Curitiba/PR</a>
+            </div>
+            <div class="icons">
+                <nav role="navigation">
+                    <ul>
+                        <li class="Sidebar-navItem">
+                            <i class="Sidebar-menuIcon fa fa-middlex fa-home "></i>
+                            <a href="./inicial.html" class="fs-16px">Início</a>
+                        </li>
+                        <li class="Sidebar-navItem">
+                            <i class="Sidebar-menuIcon fa fa-middlex fa-music"></i>
+                            <a href="#" class="fs-16px">Minhas Músicas</a>
+                        </li>
+                        <li class="Sidebar-navItem">
+                            <i class="Sidebar-menuIcon fa fa-middlex fa-upload"></i>
+                            <a href="#" class="fs-16px">Upload de músicas</a>
+                        </li>
+                        <li class="Sidebar-navItem">
+                            <i class="Sidebar-menuIcon fa fa-middlex fa-building"></i>
+                            <a href="#" class="fs-16px">Gravadoras</a>
+                        </li>
+                        <li class="Sidebar-navItem">
+                            <i class="Sidebar-menuIcon fa fa-middlex fa-user"></i>
+                            <a href="#" class="fs-16px">Perfil</a>
+                        </li>
+                        <li class="Sidebar-navItem">
+                            <i class="Sidebar-menuIcon fa fa-middlex fa-question-circle"></i>
+                            <a href="#" class="fs-16px">Ajuda</a>
+                        </li>
+                        <li class="Sidebar-navItem">
+                            <i class="Sidebar-menuIcon fa fa-middlex fa-power-off"></i>
+                            <a href="#" class="fs-16px">Sair</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <footer class="Sidebar-footer" ng-click="boolie = !boolie">
+                <i class="Sidebar-toggleArrow Sidebar-menuIcon fa  fa-arrow-left" ng-class="boolie ? 'rotate' : ''"></i>
+                <span class="Sidebar-toggleText ">Minimizar menu</span>
+            </footer>
+        </div>
+        <div class="Main">
+            <header class="wrap">
+                <nav class="nav-bar navbar-inverse top-bar-limit" role="navigation">
+                    <div id="top-menu" class="container-fluid active">
+                        <img src="logo.svg" alt="Logo" class="up-logo" />
+                        <a class="navbar-brand" href="#">SND Music Share</a>
+                        <ul class="nav navbar-nav">
+                            <form id="qform" class="navbar-form pull-left" role="search">
+                                <input type="text" class="form-control widith-240" placeholder="Pesquisar" />
+                            </form>
+                            <li class="dropdown movable">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span
+                                        class="fa fa-2x fa-user"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#"><span class="fa fa-user pr-10"></span>Meu perfil</a></li>
+                                    <li><a href="#"><span class="fa fa-gear pr-10"></span>Configurações</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#"><span class="fa fa-power-off pr-10"></span>Logout</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="col-md-12 pt-16px">
+                <div class="row">
+                    <div class="col-md-12">
+                        <section class="panel important">
+                            <div class="panel-body">
+                                <div class="box box-info">
+                                    <div class="box-body">
+                                        <div class="col-sm-6 pl-30">
+                                            <div>
+                                                <img alt="User Pic" src="foto.png" id="profile-image1" class="img-circle img-responsive mb-20">
+                                            </div>
+                                            <div class="col-md-12 user-name">
+                                                <h4 style="color:#19739c;" class="mb-5">RAFAEL FERRARI </h4>
+                                                </span>
+                                                <span style="color:#8b8b8b;"><p>VERMONT</p></span>
+                                            </div>
+                                        </div>
+                                        <div class=" sky-form col-sm-6">
+                                            <div class="button">
+                                                <span />Editar perfil
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <hr style="margin:5px 0 5px 0;">
+
+                                        <form action="" class="sky-form" />
+                                        <div class="col-md-12">
+                                            <fieldset>
+                                                <section>
+                                                    <label class="letra">Cadastrado como:</label>
+                                                    <label class="select">
+                                                        <select disabled>
+                                                            <option value="PRO" selected />Sou produtor
+                                                            <option value="GRA" />Sou gravadora
+                                                        </select>
+                                                        <i></i>
+                                                    </label>
+                                                </section>
+
+                                                <section class="col col-6 pl-0">
+                                                    <label class="letra">Nome de artista:</label>
+                                                    <label class="input">
+                                                        <input type="text" />
+                                                    </label>
+                                                </section>
+
+                                                <section class="col col-6 pr-0" disabled>
+                                                    <label class="letra">Seu nome real:</label>
+                                                    <label class="input">
+                                                        <input type="text" value="Nome real não editável" disabled/>
+                                                    </label>
+                                                </section>
+
+                                                <section class="col col-6 pl-0">
+                                                    <label class="letra">E-mail:</label>
+                                                    <label class="input">
+                                                        <input type="text" />
+                                                    </label>
+                                                </section>
+
+                                                <section class="col col-6 pr-0" disabled>
+                                                    <label class="letra">Sua senha:</label>
+                                                    <label class="input" placeholder="*******">
+                                                        <input type="password" value="123456" disabled />
+                                                    </label>
+                                                </section>
+
+                                            </fieldset>
+
+                                            <fieldset>
+                                                <section>
+                                                    <label class="letra mb-20">Estilos de músicas que produz:</label>
+                                                    <div class="row">
+                                                        <div class="col col-3 align-initial">
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Acapellas</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Acid Ambient</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Acid house</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Afro House</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Afro Tech</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Ambient House</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Ambient Techno</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Bass</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Bass House</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Bass Music</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Big Room</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Chillout</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Dance</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Dark Electro</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Dark Techno</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Deep</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Deep Dubstep</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Deep House</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Deep Minimal</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Deep Progressive</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Deep Tech</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Deep Techno</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Detroit Techno</label>
+                                                        </div>
+                                                        <div class="col col-3 align-initial">
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Disco</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>House</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Downtempo</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Dream Trance</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Drum & Bass</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Dub</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Dubhouse</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Dubstep</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Dubtech</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Dubtechno</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Edm</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Electro</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Electro House</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Electro Step</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Electro Swing</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Eletrônica</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Electronic</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Freestyle</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>French House</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Full-on</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Funk</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Soul Funk</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Soul</label>
+                                                        </div>
+                                                        <div class="col col-3 align-initial">
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Sisco Funky</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Funky</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Groove</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Future Bass</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Future House</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>G-house</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Hard</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Hard Dance</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Hard House</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Hard Techno</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Hard Trance</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Hardcore</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Hardstyle</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Hypnotic Techno</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Hi-tech</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Latin House</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Leftfield House</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Melodic</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Melodic House</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Melodic Tech</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Melodic Techno</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Micro House</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Minimal</label>
+
+                                                        </div>
+                                                        <div class="col col-3 align-initial">
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Minimal House</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Minimal Techno</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Nu Disco</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Nu Disco Old School</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Progressive</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Progressive House</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Progressive Trance</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Progressive Psy-trance</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Psikobeatz</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Psy-trance</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Dancehall</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Tech</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Tech House</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Techno</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Techstep</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Trap</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Tribal House</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Tribal Techno</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Tropical house</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Uplifting</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Upplifting</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Uplifting Trance</label>
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox" /><i></i>Trance</label>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </fieldset>
+
+                                            <fieldset>
+                                                <section>
+                                                    <label class="letra">Sua biografia:</label>
+                                                    <label class="textarea textarea-resizable">
+                                                        <textarea rows="5"></textarea>
+                                                    </label>
+                                                </section>
+
+                                                <section>
+                                                    <label class="letra">Foto de perfil:</label>
+                                                    <label for="file" class="input input-file">
+                                                        <div class="button"><input type="file" id="file"
+                                                                onchange="this.parentNode.nextSibling.value = this.value" />Browse</div><input
+                                                            type="text" readonly="" />
+                                                    </label>
+                                                </section>
+                                            </fieldset>
+
+                                            <fieldset>
+                                                <div class="button">
+                                                    <span />Salvar
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                    </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+    <script src="./script.js "></script>
+
+</body>
+
+</html>
