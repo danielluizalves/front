@@ -10,9 +10,12 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
+    <link href="https://fonts.googleapis.com/css?family=Bitter:400,700&display=swap&subset=latin-ext" rel="stylesheet" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
@@ -20,34 +23,48 @@
     <div class="Wrapper" ng-app="myApp">
         <div class="Sidebar" ng-class="boolie ? 'is-collapsed' : ''">
             <header class="Sidebar-header">
-
-                <img src="logo.svg" alt="Logo" class="Sidebar-logo" />
-
+                <img src="foto.png" alt="Logo" class="Sidebar-logo" />
             </header>
-            <nav role="navigation">
-                <ul>
-                    <li class="Sidebar-navItem">
-                        <i class="Sidebar-menuIcon fa fa-middlex fa-home "></i>
-                        <a href="#" class="fs-16px">Início</a>
-                    </li>
-                    <li class="Sidebar-navItem">
-                        <i class="Sidebar-menuIcon fa fa-middlex fa-music"></i>
-                        <a href="#" class="fs-16px">Minhas Músicas</a>
-                    </li>
-                    <li class="Sidebar-navItem">
-                        <i class="Sidebar-menuIcon fa fa-middlex fa-cog"></i>
-                        <a href="#" class="fs-16px">Configurações</a>
-                    </li>
-                    <li class="Sidebar-navItem">
-                        <i class="Sidebar-menuIcon fa fa-middlex fa-question-circle"></i>
-                        <a href="#" class="fs-16px">Ajuda</a>
-                    </li>
-                    <li class="Sidebar-navItem">
-                        <i class="Sidebar-menuIcon fa fa-middlex fa-power-off"></i>
-                        <a href="#" class="fs-16px">Sair</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="text-center uppercase name">
+                <p href="#" class="fs-16px">Vermont</a>
+            </div>
+            <div class="text-center name">
+                <p href="#" class="fs-14px mb-45">Psytrance - Curitiba/PR</a>
+            </div>
+            <div class="icons">
+                <nav role="navigation">
+                    <ul>
+                        <li class="Sidebar-navItem">
+                            <i class="Sidebar-menuIcon fa fa-middlex fa-home "></i>
+                            <a href="./inicial.html" class="fs-16px">Início</a>
+                        </li>
+                        <li class="Sidebar-navItem">
+                            <i class="Sidebar-menuIcon fa fa-middlex fa-music"></i>
+                            <a href="#" class="fs-16px">Minhas Músicas</a>
+                        </li>
+                        <li class="Sidebar-navItem">
+                            <i class="Sidebar-menuIcon fa fa-middlex fa-upload"></i>
+                            <a href="#" class="fs-16px">Upload de músicas</a>
+                        </li>
+                        <li class="Sidebar-navItem">
+                            <i class="Sidebar-menuIcon fa fa-middlex fa-building"></i>
+                            <a href="#" class="fs-16px">Gravadoras</a>
+                        </li>
+                        <li class="Sidebar-navItem">
+                            <i class="Sidebar-menuIcon fa fa-middlex fa-user"></i>
+                            <a href="#" class="fs-16px">Perfil</a>
+                        </li>
+                        <li class="Sidebar-navItem">
+                            <i class="Sidebar-menuIcon fa fa-middlex fa-question-circle"></i>
+                            <a href="#" class="fs-16px">Ajuda</a>
+                        </li>
+                        <li class="Sidebar-navItem">
+                            <i class="Sidebar-menuIcon fa fa-middlex fa-power-off"></i>
+                            <a href="#" class="fs-16px">Sair</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
             <footer class="Sidebar-footer" ng-click="boolie = !boolie">
                 <i class="Sidebar-toggleArrow Sidebar-menuIcon fa  fa-arrow-left" ng-class="boolie ? 'rotate' : ''"></i>
                 <span class="Sidebar-toggleText ">Minimizar menu</span>
@@ -57,6 +74,7 @@
             <header class="wrap">
                 <nav class="nav-bar navbar-inverse top-bar-limit" role="navigation">
                     <div id="top-menu" class="container-fluid active">
+                        <img src="logo.svg" alt="Logo" class="up-logo" />
                         <a class="navbar-brand" href="#">SND Music Share</a>
                         <ul class="nav navbar-nav">
                             <form id="qform" class="navbar-form pull-left" role="search">
@@ -141,7 +159,34 @@
                                     <td>12</td>
                                     <td>3</td>
                                     <td>10/09/2018</td>
-                                    <td>Rating Stars</td>
+                                    <td>
+                                        <div id="half-stars-example">
+                                            <div class="rating-group">
+                                                <p class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="text">
+                                                    <p aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</p>
+                                                    <p aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                    <p class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
+                                                        <p aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                        <p class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
+                                                            <p aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                            <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
+                                                            <p aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                            <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
+                                                            <p aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                            <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio">
+                                                            <p aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                            <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
+                                                            <p aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                            <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
+                                                            <p aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                            <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio" checked>
+                                                            <p aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                            <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
+                                                            <p aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                            <p class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
+                                            </div>
+                                        </div>
+                                    </td>
 
                                 </tr>
                                 <tr>
@@ -149,7 +194,34 @@
                                     <td>15</td>
                                     <td>8</td>
                                     <td>10/08/2019</td>
-                                    <td>Rating Stars</td>
+                                    <td>
+                                        <div id="half-stars-example">
+                                            <div class="rating-group">
+                                                <p class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="text">
+                                                    <p aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</p>
+                                                    <p aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                    <p class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
+                                                        <p aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                        <p class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
+                                                            <p aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                            <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
+                                                            <p aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                            <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
+                                                            <p aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                            <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio">
+                                                            <p aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                            <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
+                                                            <p aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                            <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
+                                                            <p aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                            <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
+                                                            <p aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                            <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
+                                                            <p aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                            <p class="rating__input" name="rating2" id="rating2-50" value="5" type="radio" checked>
+                                            </div>
+                                        </div>
+                                    </td>
                                 </tr>
                             </table>
                         </section>
@@ -171,18 +243,99 @@
                                     <tr>
                                         <td>Cabrunco Records</td>
                                         <td>Psytrance, full-on, hi-tech</td>
-                                        <td>Rating Stars</td>
+                                        <td>
+                                            <div id="half-stars-example">
+                                                <div class="rating-group">
+                                                    <p class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="text">
+                                                        <p aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</p>
+                                                        <p aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                        <p class="rating__input" name="rating2" id="rating2-05" value="" type="radio">
+                                                            <p aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                            <p class="rating__input" name="rating2" id="rating2-10" value="" type="radio">
+                                                                <p aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-15" value="" type="radio">
+                                                                <p aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-20" value="" type="radio">
+                                                                <p aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-25" value="" type="radio">
+                                                                <p aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-30" value="" type="radio">
+                                                                <p aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-35" value="" type="radio">
+                                                                <p aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-40" value="" type="radio" checked>
+                                                                <p aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-45" value="" type="radio">
+                                                                <p aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                                <p class="rating__input" name="rating2" id="rating2-50" value="" type="radio">
+                                                </div>
+                                            </div>
+                                        </td>
 
                                     </tr>
                                     <tr>
                                         <td>Cogumello Records</td>
                                         <td>Progressive, Psytrance, Full-on</td>
-                                        <td>Rating Stars</td>
+                                        <td>
+                                            <div id="half-stars-example">
+                                                <div class="rating-group">
+                                                    <p class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="text">
+                                                        <p aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</p>
+                                                        <p aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                        <p class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
+                                                            <p aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                            <p class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
+                                                                <p aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
+                                                                <p aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
+                                                                <p aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio">
+                                                                <p aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
+                                                                <p aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
+                                                                <p aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio" checked>
+                                                                <p aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
+                                                                <p aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                                <p class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
+                                                </div>
+                                            </div>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Alien Records</td>
                                         <td>Progressive, Full-on</td>
-                                        <td>Rating Stars</td>
+                                        <td>
+                                            <div id="half-stars-example">
+                                                <div class="rating-group">
+                                                    <p class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="text">
+                                                        <p aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</p>
+                                                        <p aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                        <p class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
+                                                            <p aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                            <p class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
+                                                                <p aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
+                                                                <p aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
+                                                                <p aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio">
+                                                                <p aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
+                                                                <p aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
+                                                                <p aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio" checked>
+                                                                <p aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
+                                                                <p aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                                <p class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
+                                                </div>
+                                            </div>
+                                        </td>
                                     </tr>
                                 </table>
                             </section>
@@ -199,18 +352,99 @@
                                     <tr>
                                         <td>Gennova Records</td>
                                         <td>Psytrance</td>
-                                        <td>Rating Stars</td>
+                                        <td>
+                                            <div id="half-stars-example">
+                                                <div class="rating-group">
+                                                    <p class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="text">
+                                                        <p aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</p>
+                                                        <p aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                        <p class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
+                                                            <p aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                            <p class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
+                                                                <p aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
+                                                                <p aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
+                                                                <p aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio">
+                                                                <p aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
+                                                                <p aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
+                                                                <p aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio" checked>
+                                                                <p aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
+                                                                <p aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                                <p class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
+                                                </div>
+                                            </div>
+                                        </td>
 
                                     </tr>
                                     <tr>
                                         <td>Warm-up Records</td>
                                         <td>Progressive, Psytrance, Full-on, Hi-tech</td>
-                                        <td>Rating Stars</td>
+                                        <td>
+                                            <div id="half-stars-example">
+                                                <div class="rating-group">
+                                                    <p class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="text">
+                                                        <p aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</p>
+                                                        <p aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                        <p class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
+                                                            <p aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                            <p class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
+                                                                <p aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
+                                                                <p aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
+                                                                <p aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio">
+                                                                <p aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
+                                                                <p aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
+                                                                <p aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio" checked>
+                                                                <p aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
+                                                                <p aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                                <p class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
+                                                </div>
+                                            </div>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Sabugo Records</td>
                                         <td>Full-on</td>
-                                        <td>Rating Stars</td>
+                                        <td>
+                                            <div id="half-stars-example">
+                                                <div class="rating-group">
+                                                    <p class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="text">
+                                                        <p aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</p>
+                                                        <p aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                        <p class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
+                                                            <p aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                            <p class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
+                                                                <p aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
+                                                                <p aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
+                                                                <p aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio">
+                                                                <p aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
+                                                                <p aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
+                                                                <p aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio" checked>
+                                                                <p aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></p>
+                                                                <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
+                                                                <p aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></p>
+                                                                <p class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
+                                                </div>
+                                            </div>
+                                        </td>
                                     </tr>
                                 </table>
                             </section>

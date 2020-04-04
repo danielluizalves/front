@@ -76,8 +76,6 @@ h2 {
 
 /* TABS */
 
-
-
 h2.active {
     color: #0d0d0d;
     margin-top: 17px;
@@ -302,7 +300,6 @@ input[type=text]:placeholder {
     content: "";
     transition: width 0.2s;
 }
-
 
 .underlineHover:hover {
     color: #0d0d0d;

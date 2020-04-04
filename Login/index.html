@@ -1,52 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <title>SND Music Share | Login</title>
     <link rel="stylesheet" href="./style.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="wrapper fadeInDown">
-      <div id="formContent">
-        <!-- Logo -->
-        <div class="fadeIn first">
-          <img src="./logo.png" id="icon" alt="User Icon" />
+        <div id="formContent">
+            <!-- Logo -->
+            <div class="fadeIn first">
+                <a href="../landing/index.html">
+                    <img src="./logo.png" id="icon" alt="User Icon" />
+                </a>
+            </div>
+
+            <h2 class="active">Login</h2>
+
+            <!-- Formulário de login-->
+            <form>
+                <input type="text" id="login" class="fadeIn second" name="login" placeholder="Usuário ou e-mail" />
+                <input type="password" id="password" class="fadeIn third" name="login" placeholder="Senha" />
+                <input type="submit" class="fadeIn fourth" value="Log In" />
+            </form>
+
+            <!-- Esqueceu sua senha-->
+            <a class="underlineHover colorGrey" href="#">Esqueci minha senha</a>
+
+            <!-- Ainda não é cadastrado-->
+            <div id="formFooter">
+                <a class="underlineHover" href="#">Ainda não sou cadastrado</a>
+            </div>
         </div>
-
-        <h2 class="active">Login</h2>
-
-        <!-- Formulário de login-->
-        <form>
-          <input
-            type="text"
-            id="login"
-            class="fadeIn second"
-            name="login"
-            placeholder="Usuário ou e-mail"
-          />
-          <input
-            type="password"
-            id="password"
-            class="fadeIn third"
-            name="login"
-            placeholder="Senha"
-          />
-          <input 
-            type="submit" 
-            class="fadeIn fourth" 
-            value="Log In" 
-          />
-        </form>
-
-        <!-- Esqueceu sua senha-->
-        <a class="underlineHover colorGrey" href="#">Esqueci minha senha</a>
-
-        <!-- Ainda não é cadastrado-->
-        <div id="formFooter">
-          <a class="underlineHover" href="#">Ainda não sou cadastrado</a>
-        </div>
-      </div>
     </div>
-  </body>
+</body>
+
 </html>
