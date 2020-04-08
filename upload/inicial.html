@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SND Music Share | Home</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/fontawesome.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
+    <link href="https://fonts.googleapis.com/css?family=Bitter:400,700&display=swap&subset=latin-ext" rel="stylesheet" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="Wrapper" ng-app="myApp">
+        <div class="Sidebar" ng-class="boolie ? 'is-collapsed' : ''">
+            <header class="Sidebar-header">
+                <img src="foto.png" alt="Logo" class="Sidebar-logo" />
+            </header>
+            <div class="text-center uppercase name">
+                <p href="#" class="fs-16px">Vermont</a>
+            </div>
+            <div class="text-center name">
+                <p href="#" class="fs-14px mb-45">Psytrance - Curitiba/PR</a>
+            </div>
+            <div class="icons">
+                <nav role="navigation">
+                    <ul>
+                        <li class="Sidebar-navItem">
+                            <i class="Sidebar-menuIcon fa fa-middlex fa-home "></i>
+                            <a href="./inicial.html" class="fs-16px">Início</a>
+                        </li>
+                        <li class="Sidebar-navItem">
+                            <i class="Sidebar-menuIcon fa fa-middlex fa-music"></i>
+                            <a href="#" class="fs-16px">Minhas Músicas</a>
+                        </li>
+                        <li class="Sidebar-navItem">
+                            <i class="Sidebar-menuIcon fa fa-middlex fa-upload"></i>
+                            <a href="#" class="fs-16px">Upload de músicas</a>
+                        </li>
+                        <li class="Sidebar-navItem">
+                            <i class="Sidebar-menuIcon fa fa-middlex fa-building"></i>
+                            <a href="#" class="fs-16px">Gravadoras</a>
+                        </li>
+                        <li class="Sidebar-navItem">
+                            <i class="Sidebar-menuIcon fa fa-middlex fa-user"></i>
+                            <a href="#" class="fs-16px">Perfil</a>
+                        </li>
+                        <li class="Sidebar-navItem">
+                            <i class="Sidebar-menuIcon fa fa-middlex fa-question-circle"></i>
+                            <a href="#" class="fs-16px">Ajuda</a>
+                        </li>
+                        <li class="Sidebar-navItem">
+                            <i class="Sidebar-menuIcon fa fa-middlex fa-power-off"></i>
+                            <a href="#" class="fs-16px">Sair</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <footer class="Sidebar-footer" ng-click="boolie = !boolie">
+                <i class="Sidebar-toggleArrow Sidebar-menuIcon fa  fa-arrow-left" ng-class="boolie ? 'rotate' : ''"></i>
+                <span class="Sidebar-toggleText ">Minimizar menu</span>
+            </footer>
+        </div>
+        <div class="Main">
+            <header class="wrap">
+                <nav class="nav-bar navbar-inverse top-bar-limit" role="navigation">
+                    <div id="top-menu" class="container-fluid active">
+                        <img src="logo.svg" alt="Logo" class="up-logo" />
+                        <a class="navbar-brand" href="#">SND Music Share</a>
+                        <ul class="nav navbar-nav">
+                            <form id="qform" class="navbar-form pull-left" role="search">
+                                <input type="text" class="form-control widith-240" placeholder="Pesquisar" />
+                            </form>
+                            <li class="dropdown movable">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span
+                                        class="fa fa-2x fa-user"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#"><span class="fa fa-user pr-10"></span>Meu perfil</a></li>
+                                    <li><a href="#"><span class="fa fa-gear pr-10"></span>Configurações</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#"><span class="fa fa-power-off pr-10"></span>Logout</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="col-md-12 pt-16px">
+                <div class="row">
+                    <div class="col-md-12">
+                        <section class="panel important">
+                            <div class="panel-body pr-0">
+                                <div class="box box-info">
+                                    <div class="box-body">
+                                        <div class="col-md-12 pr-0">
+                                            <h1 class="fs-36">Upload de música</h1>
+                                            <br>
+                                            <br>
+                                            <span>Carregue sua (s) faixa (s) de demonstração no SND Music Share. Preencha os dados abaixo e use o botão 'Selecionar'  para selecionar o arquivo do seu dispositivo. Depois de enviar sua faixa, clique no botão 'Adicionar' abaixo para continuar!</span>
+                                            <br>
+                                            <br>
+                                            <span>Formatos de arquivo suportados: .mp3 .wav .aiff .flac .mp4 mínimo 44.1Khz.</span>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input  id='selecao-arquivo' type='file' onchange="readURL(this);" />
+                                            <img class="img" id="blah" src="./img.png" alt="your image" />
+                                            <label class="new-btn" for='selecao-arquivo'>Selecionar um arquivo</label>
+
+                                        </div>
+                                        <div class="col-md-9 float-right pr-0">
+                                            <form action="" class="sky-form" />
+                                            <div class="col-md-12">
+                                                <fieldset>
+                                                    <section>
+                                                        <label class="letra">Título:</label>
+                                                        <label class="input">
+                                                            <input type="text" />
+                                                        </label>
+                                                    </section>
+
+                                                    <section>
+                                                        <label class="letra">Gênero:</label>
+                                                        <label class="select">
+                                                            <select>
+                                                                <option value="none" selected disabled/>Selecione um estilo
+                                                                <option value="est1" />Acapellas
+                                                                <option value="est2" />Acid Ambient
+                                                                <option value="est3" />Acid house
+                                                                <option value="est4" />Afro House
+                                                                <option value="est5" />Afro Tech
+                                                                <option value="est6" />Ambient House
+                                                                <option value="est7" />Ambient Techno
+                                                                <option value="est8" />Bass
+                                                                <option value="est9" />Bass House
+                                                                <option value="est10" />Bass Music
+                                                                <option value="est11" />Big Room
+                                                                <option value="est12" />Chillout
+                                                                <option value="est13" />Dance
+                                                                <option value="est14" />Dark Electro
+                                                                <option value="est15" />Dark Techno
+                                                                <option value="est16" />Deep
+                                                                <option value="est17" />Deep Dubstep
+                                                                <option value="est18" />Deep House
+                                                                <option value="est19" />Deep Minimal
+                                                                <option value="est20" />Deep Progressive
+                                                                <option value="est21" />Deep Tech
+                                                                <option value="est22" />Deep Techno
+                                                                <option value="est23" />Detroit Techno
+                                                                <option value="est24" />Disco
+                                                                <option value="est25" />House
+                                                                <option value="est26" />Downtempo
+                                                                <option value="est27" />Dream Trance
+                                                                <option value="est28" />Drum & Bass
+                                                                <option value="est29" />Dub
+                                                                <option value="est30" />Dubhouse
+                                                                <option value="est31" />Dubstep
+                                                                <option value="est32" />Dubtech
+                                                                <option value="est33" />Dubtechno
+                                                                <option value="est34" />Edm
+                                                                <option value="est35" />Electro
+                                                                <option value="est36" />Electro House
+                                                                <option value="est37" />Electro Step
+                                                                <option value="est38" />Electro Swing
+                                                                <option value="est39" />Eletrônica
+                                                                <option value="est40" />Electronic
+                                                                <option value="est41" />Freestyle
+                                                                <option value="est42" />French House
+                                                                <option value="est43" />Full-on
+                                                                <option value="est44" />Funk
+                                                                <option value="est45" />Soul Funk
+                                                                <option value="est46" />Soul
+                                                                <option value="est47" />Sisco Funky
+                                                                <option value="est48" />Funky
+                                                                <option value="est49" />Groove
+                                                                <option value="est50" />Future Bass
+                                                                <option value="est51" />Future House
+                                                                <option value="est52" />G-house
+                                                                <option value="est53" />Hard
+                                                                <option value="est54" />Hard Dance
+                                                                <option value="est55" />Hard House
+                                                                <option value="est56" />Hard Techno
+                                                                <option value="est57" />Hard Trance
+                                                                <option value="est58" />Hardcore
+                                                                <option value="est59" />Hardstyle
+                                                                <option value="est60" />Hypnotic Techno
+                                                                <option value="est61" />Hi-tech
+                                                                <option value="est62" />Latin House
+                                                                <option value="est63" />Leftfield House
+                                                                <option value="est64" />Melodic
+                                                                <option value="est65" />Melodic House
+                                                                <option value="est66" />Melodic Tech
+                                                                <option value="est67" />Melodic Techno
+                                                                <option value="est68" />Micro House
+                                                                <option value="est69" />Minimal
+                                                                <option value="est70" />Minimal House
+                                                                <option value="est71" />Minimal Techno
+                                                                <option value="est72" />Nu Disco
+                                                                <option value="est73" />Nu Disco Old School
+                                                                <option value="est74" />Progressive
+                                                                <option value="est75" />Progressive House
+                                                                <option value="est76" />Progressive Trance
+                                                                <option value="est77" />Progressive Psy-trance
+                                                                <option value="est78" />Psikobeatz
+                                                                <option value="est79" />Psy-trance
+                                                                <option value="est80" />Dancehall
+                                                                <option value="est81" />Tech
+                                                                <option value="est82" />Tech House
+                                                                <option value="est83" />Techno
+                                                                <option value="est84" />Techstep
+                                                                <option value="est85" />Trap
+                                                                <option value="est86" />Tribal House
+                                                                <option value="est87" />Tribal Techno
+                                                                <option value="est88" />Tropical house
+                                                                <option value="est89" />Uplifting
+                                                                <option value="est90" />Upplifting
+                                                                <option value="est91" />Uplifting Trance
+                                                                <option value="est92" />Trance
+
+                                                            </select>
+                                                            <i></i>
+                                                        </label>
+                                                    </section>
+
+                                                    <section>
+                                                        <label class="letra">Selecione a track:</label>
+                                                        <label class="input">
+                                                            <div class="col-md-10 float-right" >
+                                                            <input type="text" disabled />
+                                                            </div>
+                                                            <div class="button send col-md-3">
+                                                                <span />Selecionar
+                                                            </div>
+                                                        </label>
+                                                    </section>
+
+                                                </fieldset>
+                                                <fieldset class="pt-15">
+                                                    <section>
+                                                        <label class="letra">Descrição:</label>
+                                                        <label class="textarea textarea-resizable">
+                                                            <textarea rows="5"></textarea>
+                                                        </label>
+                                                    </section>
+
+                                                    <section>
+                                                        <label class="letra">Privacidade: </label>
+                                                        <div class="inline-group">
+                                                            
+                                                            <label class="radio">
+                                                                <input type="radio" name="radio-inline" /><i></i>Pública</label>
+                                                            <label class="radio mt-1">
+                                                                <input type="radio" name="radio-inline" /><i></i>Privada</label>
+                                                        </div>
+                                                    </section>
+
+                                                    <section>
+                                                        <label class="letra">Autenticidade:</label>
+                                                        <div class="inline-group">
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox-inline" /><i></i>Bootleg / Remix / Amostras de músicas existentes são usadas.</label>
+                                                        </div>
+                                                    </section>
+
+                                                    <section>
+                                                        <label class="letra">Download:</label>
+                                                        <div class="inline-group">
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="checkbox-inline" /><i></i>Permitir download da faixa.</label>
+                                                        </div>
+                                                        <div class="note"><strong>Isso torna a faixa disponível para download e reprodução (pública) de todos os outros membros produtores, DJs e label's da nossa comunidade e pode criar mais reputação.</strong> </div>
+                                                    </section>
+
+                                                    <div class="button">
+                                                        <span />Adicionar
+                                                    </div>
+
+                                                    <div class="button btn-red  ">
+                                                        <span />Limpar campos
+                                                    </div>
+                                                    
+                                                </fieldset>
+                                            </div>
+
+                                        </div>
+                                        
+                                    </div>
+
+                                </div>
+                            </div>
+
+                    </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+    <script src="./script.js "></script>
+
+</body>
+
+</html>
